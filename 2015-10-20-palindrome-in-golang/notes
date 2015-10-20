@@ -1,0 +1,7 @@
+Conditions :
+	- Type numérique / alphanumérique
+	- Mot avec espaces
+
+Alglo :
+	- un mot de longueur 0 ou 1 est un palindrome
+	- un mot est un palindrome si sa première lettre est identique à sa dernière et si son intérieur (le sous- un mot commençant à la deuxième position et finissant à l'avant dernière lettre: dans le cas de "ABCBA" le sous-mot est "BCB") est un palindrome
