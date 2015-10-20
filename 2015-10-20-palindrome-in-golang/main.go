@@ -6,11 +6,12 @@ import (
 )
 
 func main() {
-   fmt.Printf("Hello world!\n")
+   fmt.Printf("2015-10-20-palindrome-in-golang\n")
 }
 
 func palindrome(s string) bool {
 	whitoutSpaces := strings.Replace(s," ", "", -1)
+
 	if len(whitoutSpaces) < 2 {
 		return true
 	} else {
