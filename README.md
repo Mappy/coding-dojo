@@ -13,3 +13,4 @@ Pour exécuter les tests, la commande "go test" est exécutée.
 ### 2015-10-20-palindrome-in-golang
 Niveau débutant, session de 45mn, 6-7 personnes.
 
+### 2015-10-27-chiffres-romains
