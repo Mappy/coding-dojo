@@ -39,17 +39,4 @@ public class SimpleElevatorTest {
         assertThat(elevator.nextCommand()).isEqualTo("DOWN");
         assertThat(elevator.nextCommand()).isEqualTo("OPEN");
     }
-
-    @Test
-    public void should_go_to_required_floor() throws Exception {
-        elevator.call("4", "DOWN");
-
-        assertThat(elevator.nextCommand()).isEqualTo("UP");
-        assertThat(elevator.nextCommand()).isEqualTo("UP");
-        assertThat(elevator.nextCommand()).isEqualTo("UP");
-        assertThat(elevator.nextCommand()).isEqualTo("UP");
-        assertThat(elevator.nextCommand()).isEqualTo("OPEN");
-        assertThat(elevator.nextCommand()).isEqualTo("CLOSE");
-
-    }
 }

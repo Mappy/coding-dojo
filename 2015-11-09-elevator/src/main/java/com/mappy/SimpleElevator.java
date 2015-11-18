@@ -28,11 +28,12 @@ public class SimpleElevator implements Elevator {
             "DOWN",
             "DOWN",
             "DOWN");
-    private int i = -1;
-    private String required;
+    private int i = 0;
 
     @Override
-    public void reset() {}
+    public void reset() {
+        i = 0;
+    }
 
     @Override
     public void userHasEntered() {}
@@ -41,16 +42,13 @@ public class SimpleElevator implements Elevator {
     public void userHasExited() {}
 
     @Override
-    public void call(String atFloor, String to) {
-        required = atFloor;
-    }
+    public void call(String atFloor, String to) {}
 
     @Override
     public void go(String floorToGo) {}
 
     @Override
     public String nextCommand() {
-        i = (i + 1) % commands.size();
-        return commands.get(i);
+        return commands.get(i++ % commands.size());
     }
 }
